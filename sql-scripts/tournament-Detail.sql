@@ -14,3 +14,9 @@ INSERT INTO `tournament` VALUES
 	(2,'MM CHALLENGER TROPHY 2012','2013-6-04','2013-7-05','7'),
 	(3,'TBSCA 2012 (Blue Sky)','2014-6-04','2014-7-05','5'),
 	(4,'Chennai Super League (SIVET) 2012','2015-6-04','2015-7-05','6');
+	
+INSERT INTO `player` VALUES 
+	('8','Srini','vasan','srini@stallionscc.com','2005-6-04','chennai','kknagar','srini','righthand','rightarm medium','all roundr','active'),
+	('9','kishore','kumar','kishore@stallionscc.com','2008-7-05','chennai','medavakkam','righthand','rigtharm slow','all roundr','Srini','active'),
+	('10','sarathy','dk','sarathy@stallionscc.com','2012-5-06','cuddalore','tambaram','dk','righthand','left arm spin','all roundr','active'),
+	('11','sathiya','st','sathiya@stallionscc.com','2018-4-07','theni','palavarm','st','lefthand','right arem phase','all roundr','in active');	
