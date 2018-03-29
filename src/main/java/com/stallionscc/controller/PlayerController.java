@@ -19,7 +19,7 @@ import com.stallionscc.service.PlayerService;
 @RequestMapping("/player")
 public class PlayerController {
 
-	// need to inject our customer service
+	// need to inject our Player service
 	@Autowired
 	private PlayerService playerService;
 	

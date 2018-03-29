@@ -12,7 +12,7 @@ import com.stallionscc.entity.Player;
 @Service
 public class PlayerServiceImpl implements PlayerService {
 
-	// need to inject customer dao
+	// need to inject Player dao
 	@Autowired
 	private PlayerDAO playerDAO;
 	

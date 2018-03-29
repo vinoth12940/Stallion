@@ -11,6 +11,7 @@
                 <li class="active"><a href="${pageContext.request.contextPath}/welcome/" ><i class="fa fa-home"></i> <span>Home</span></a></li>
                 <security:authorize access="hasAnyRole('USER')">
 					<li><a href="${pageContext.request.contextPath}/scoreCard/"><i class="fa fa-calendar"></i> <span>Score Card</span></a></li>
+					<li><a href="${pageContext.request.contextPath}/player/list"><i class="fa fa-angle-double-right"></i> List of Players</a></li>
 				</security:authorize>
 				<security:authorize access="hasAnyRole('ADMIN')">
 					<li><a href="${pageContext.request.contextPath}/register/showRegistrationForm" ><i class="fa fa-pencil fa-fw"></i> <span>Register New User</span></a></li>
@@ -23,8 +24,7 @@
 					<li>
 						<a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-search"></i> <span>Tournament Details</span><i class="fa fa-fw fa-angle-down pull-right"></i></a>
 						<ul id="submenu-2" class="submenu collapse">
-							<li><a href="${pageContext.request.contextPath}/addTournament"><i class="fa fa-angle-double-right"></i> Add Tournament</a></li>
-							<li><a href="${pageContext.request.contextPath}/listOfTournament"><i class="fa fa-angle-double-right"></i> List of Tournament</a></li>
+							<li><a href="${pageContext.request.contextPath}/tournament/list"><i class="fa fa-angle-double-right"></i> List of Tournament</a></li>
 						</ul>
 					</li>                                              
 					<li>

@@ -18,9 +18,9 @@ public class SimpleAuthenticationSuccessHandler implements AuthenticationSuccess
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
 		Set<String> roles = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
 		if (roles.contains("ROLE_USER")  ){
-			response.sendRedirect("/stallionscc/welcome/");
+			response.sendRedirect("/Stallions/welcome/");
 		}else if (roles.contains("ROLE_ADMIN")) {
-			response.sendRedirect("/stallionscc/welcome/");
+			response.sendRedirect("/Stallions/welcome/");
 		} 
     }
 }
