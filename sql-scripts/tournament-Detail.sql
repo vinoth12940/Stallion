@@ -5,7 +5,7 @@ CREATE TABLE `tournament` (
   `tournament_Name` varchar(250) DEFAULT NULL,
   `start_Date` DATE NOT NULL,
   `end_Date` DATE NOT NULL,
-  `no_Of_Matches` varchar(20) NOT NULL,
+  `no_Of_Matches` varchar(20) NOT NULL,l
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
