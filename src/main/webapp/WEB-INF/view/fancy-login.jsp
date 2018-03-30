@@ -12,7 +12,7 @@
 <div class="container main-section">
 	<div class="row">
 		<div class="col-md-12 text-center user-login-header">
-			<h1>Sign In</h1>
+			<h1>Welcome to StallionsCC - Please Login</h1>
 		</div>
 	</div>
 	<div class="row">
@@ -67,15 +67,15 @@
 							<input type="password" name="password" placeholder="password" class="form-control" >
 						</div>
 					</div>
-					<button type="submit" class="btn btn-defualt">Login</button>
+					<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
 					<!-- <a href="#" class="btn btn-defualt">Login</a>-->
 					<input type="hidden"
 							   name="${_csrf.parameterName}"
 							   value="${_csrf.token}" />
 				</div>
-				<div class="col-md-12 col-sm-12 col-xs-12 last-part">
+				<!-- <div class="col-md-12 col-sm-12 col-xs-12 last-part">
 					<p>Want to Join as a member?<a href="#"> Contact Us</a></p>
-				</div>
+				</div> -->
 				
 			</div>
 			</form>
