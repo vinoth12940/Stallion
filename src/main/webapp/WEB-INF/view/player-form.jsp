@@ -280,7 +280,7 @@
 											<!-- <button type="submit" class="btn btn-default ">Cancel</button> -->
 										</div>
 										<div class="col-lg-6">						
-											<input type="submit" value="Save" class="btn btn-primary pull-right" />
+											<input type="submit" value="Save/Update" class="btn btn-primary pull-right" />
 										</div>
 									</div>
 								</div>

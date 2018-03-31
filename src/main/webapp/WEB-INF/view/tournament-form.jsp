@@ -161,6 +161,24 @@
 										</div>
 									</div>
 									<div class="form-group">
+											<label for="matchType" class="col-sm-3 control-label">Match
+												Type</label>
+											<div class="col-md-9">
+												<form:select path="matchType" id="matchType"
+													class="form-control" placeholder="Select match type">
+													<form:option value="">Select Match Type</form:option>
+													<form:option value="20/20">20/20</form:option>
+													<form:option value="25/25">25/25</form:option>
+													<form:option value="30/30">30/30</form:option>
+													<form:option value="Practice match">Practice match</form:option>
+													<form:option value="50 over match">50 over match</form:option>
+												</form:select>
+												<div class="has-error">
+													<form:errors path="matchType" class="help-inline" />
+												</div>
+											</div>
+										</div>
+									<div class="form-group">
 										<label for="noOfMatches" class="col-sm-3 control-label">No Of Matches
 											</label>
 										<div class="col-md-9">
@@ -189,7 +207,7 @@
 											<!-- <button type="submit" class="btn btn-default ">Cancel</button> -->
 										</div>
 										<div class="col-lg-6">						
-											<input type="submit" value="Save" class="btn btn-primary pull-right" />
+											<input type="submit" value="Save/Update" class="btn btn-primary pull-right" />
 										</div>
 								</div>
 								<p>
