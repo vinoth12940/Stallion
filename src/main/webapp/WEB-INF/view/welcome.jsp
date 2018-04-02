@@ -14,7 +14,7 @@
     <title>StallionsCC | Home</title>
 
     <!-- Bootstrap -->
-	<<link href="${pageContext.request.contextPath}/resources/css/bootstrap.css" rel="stylesheet"></link>
+	<link href="${pageContext.request.contextPath}/resources/css/bootstrap.css" rel="stylesheet"></link>
     <link href="${pageContext.request.contextPath}/resources/css/site.css" rel="stylesheet"></link>
 	
     <!-- Font Awesome -->

@@ -42,6 +42,10 @@ public class Tournament {
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date endDate;
 	
+	@Column(name="match_type")
+	private String matchType;
+
+	
 	@Column(name="no_Of_Matches")
 	private String noOfMatches;
 
@@ -49,12 +53,14 @@ public class Tournament {
 		super();
 	}
 
-	public Tournament(int id, String tournamentName, Date startDate, Date endDate, String noOfMatches) {
+	public Tournament(int id, String tournamentName, Date startDate, Date endDate, String matchType,
+			String noOfMatches) {
 		super();
 		this.id = id;
 		this.tournamentName = tournamentName;
 		this.startDate = startDate;
 		this.endDate = endDate;
+		this.matchType = matchType;
 		this.noOfMatches = noOfMatches;
 	}
 
@@ -90,6 +96,14 @@ public class Tournament {
 		this.endDate = endDate;
 	}
 
+	public String getMatchType() {
+		return matchType;
+	}
+
+	public void setMatchType(String matchType) {
+		this.matchType = matchType;
+	}
+
 	public String getNoOfMatches() {
 		return noOfMatches;
 	}
@@ -101,7 +115,6 @@ public class Tournament {
 	@Override
 	public String toString() {
 		return "Tournament [id=" + id + ", tournamentName=" + tournamentName + ", startDate=" + startDate + ", endDate="
-				+ endDate + ", noOfMatches=" + noOfMatches + "]";
+				+ endDate + ", matchType=" + matchType + ", noOfMatches=" + noOfMatches + "]";
 	}
-	
 }

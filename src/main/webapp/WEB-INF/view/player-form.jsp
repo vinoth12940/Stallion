@@ -14,7 +14,7 @@
     <title>StallionsCC | Home</title>
 
     <!-- Bootstrap -->
-	<<link href="${pageContext.request.contextPath}/resources/css/bootstrap.css" rel="stylesheet"></link>
+	<link href="${pageContext.request.contextPath}/resources/css/bootstrap.css" rel="stylesheet"></link>
     <link href="${pageContext.request.contextPath}/resources/css/site.css" rel="stylesheet"></link>
 	<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css" />
 	
@@ -280,7 +280,7 @@
 											<!-- <button type="submit" class="btn btn-default ">Cancel</button> -->
 										</div>
 										<div class="col-lg-6">						
-											<input type="submit" value="Save" class="btn btn-primary pull-right" />
+											<input type="submit" value="Save/Update" class="btn btn-primary pull-right" />
 										</div>
 									</div>
 								</div>
