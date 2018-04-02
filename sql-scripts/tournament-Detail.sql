@@ -16,7 +16,7 @@ INSERT INTO `tournament` VALUES
 	(4,'Chennai Super League (SIVET) 2012','2015-6-04','2015-7-05','20/20','6');
 	
 INSERT INTO `player` VALUES 
-	('8','Srini','vasan','srini@stallionscc.com','2005-6-04','chennai','kknagar','srini','righthand','rightarm medium','all roundr','active'),
-	('9','kishore','kumar','kishore@stallionscc.com','2008-7-05','chennai','medavakkam','righthand','rigtharm slow','all roundr','Srini','active'),
-	('10','sarathy','dk','sarathy@stallionscc.com','2012-5-06','cuddalore','tambaram','dk','righthand','left arm spin','all roundr','active'),
-	('11','sathiya','st','sathiya@stallionscc.com','2018-4-07','theni','palavarm','st','lefthand','right arem phase','all roundr','in active');	
+	('1','Srini','vasan','srini@stallionscc.com','2005-6-04','chennai','kknagar','srini','righthand','rightarm medium','all roundr','active'),
+	('2','kishore','kumar','kishore@stallionscc.com','2008-7-05','chennai','medavakkam','righthand','rigtharm slow','all roundr','Srini','active'),
+	('3','sarathy','dk','sarathy@stallionscc.com','2012-5-06','cuddalore','tambaram','dk','righthand','left arm spin','all roundr','active'),
+	('4','sathiya','st','sathiya@stallionscc.com','2018-4-07','theni','palavarm','st','lefthand','right arem phase','all roundr','in active');	
