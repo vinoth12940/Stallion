@@ -265,9 +265,8 @@
 												<label for="status" class="col-sm-3 control-label">Status
 													</label>
 												<div class="col-md-9">
-													<form:input type="text" path="status"
-														id="status" class="form-control"
-														placeholder="Status" />
+													<form:checkbox path="status" id="status"
+														class="form-control" placeholder="status" />
 													<div class="has-error">
 														<form:errors path="status" class="help-inline" />
 													</div>

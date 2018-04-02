@@ -55,27 +55,10 @@ public class Player {
 	private String role;
 	
 	@Column(name="status")
-	private String status;
+	private boolean status;
 
 	public Player() {
 		super();
-	}
-
-	public Player(int id, String firstName, String lastName, String email, Date birthDate, String bornPlace,
-			String address, String nickName, String battingStyle, String bowlingStyle, String role, String status) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-		this.birthDate = birthDate;
-		this.bornPlace = bornPlace;
-		this.address = address;
-		this.nickName = nickName;
-		this.battingStyle = battingStyle;
-		this.bowlingStyle = bowlingStyle;
-		this.role = role;
-		this.status = status;
 	}
 
 	public int getId() {
@@ -166,11 +149,11 @@ public class Player {
 		this.role = role;
 	}
 
-	public String getStatus() {
+	public boolean isStatus() {
 		return status;
 	}
 
-	public void setStatus(String status) {
+	public void setStatus(boolean status) {
 		this.status = status;
 	}
 
@@ -180,8 +163,7 @@ public class Player {
 				+ ", birthDate=" + birthDate + ", bornPlace=" + bornPlace + ", address=" + address + ", nickName="
 				+ nickName + ", battingStyle=" + battingStyle + ", bowlingStyle=" + bowlingStyle + ", role=" + role
 				+ ", status=" + status + "]";
-	}
-	
+	}	
 }
 
 
