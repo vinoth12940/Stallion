@@ -10,10 +10,10 @@ CREATE TABLE `tournament` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 INSERT INTO `tournament` VALUES 
-	(1,'Chennai Super League (SIVET) 2012','2012-6-04','2012-7-05','8'),
-	(2,'MM CHALLENGER TROPHY 2012','2013-6-04','2013-7-05','7'),
-	(3,'TBSCA 2012 (Blue Sky)','2014-6-04','2014-7-05','5'),
-	(4,'Chennai Super League (SIVET) 2012','2015-6-04','2015-7-05','6');
+	(1,'Chennai Super League (SIVET) 2012','2012-6-04','2012-7-05','20/20','8'),
+	(2,'MM CHALLENGER TROPHY 2012','2013-6-04','2013-7-05','20/20','7'),
+	(3,'TBSCA 2012 (Blue Sky)','2014-6-04','2014-7-05','20/20','5'),
+	(4,'Chennai Super League (SIVET) 2012','2015-6-04','2015-7-05','20/20','6');
 	
 INSERT INTO `player` VALUES 
 	('8','Srini','vasan','srini@stallionscc.com','2005-6-04','chennai','kknagar','srini','righthand','rightarm medium','all roundr','active'),
