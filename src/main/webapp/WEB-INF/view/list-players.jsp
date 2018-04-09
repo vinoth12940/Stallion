@@ -30,6 +30,7 @@
     <script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!--<link rel="stylesheet" href="styles/css/site2.css">-->
+
 </head>
 
 
@@ -110,7 +111,7 @@
                         <!-- /.box-header -->
                         <div class="">
                             <div class="table-responsive">
-                                <table id="example2" class="table table-striped table-hover" >
+                                <table id="example2" class="table table-striped table-hover table-sm">
                                     <thead>
                                         <tr>
 											<th>First Name</th>
@@ -128,8 +129,6 @@
 											<security:authorize access="hasAnyRole('ADMIN')">
 												<th>Action</th>
 											</security:authorize>
-											<th width="100"></th>
-											<th width="100"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -259,6 +258,7 @@
             $('#matchPerformance').highcharts(json);
             $('#matchPerformance1').highcharts(json);
         });
+        
     </script>
 
 </body>
