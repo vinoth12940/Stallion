@@ -1,4 +1,6 @@
+CREATE DATABASE  IF NOT EXISTS `player_tracker`;
 USE `player_tracker`;
+
 
 CREATE TABLE IF NOT EXISTS `player_tracker`.`player` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
