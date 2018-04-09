@@ -32,8 +32,6 @@
     <!--<link rel="stylesheet" href="styles/css/site2.css">-->
 
 </head>
-
-
 <body>
     <header class="main-header">
         <!-- Logo -->
