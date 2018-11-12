@@ -122,6 +122,8 @@
 											<security:authorize access="hasAnyRole('ADMIN')">
 												<th>Action</th>
 											</security:authorize>
+											<th width="100"></th>
+											<th width="100"></th>
                                         </tr>
                                     </thead>
                                     <tbody>

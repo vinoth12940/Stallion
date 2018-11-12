@@ -16,7 +16,6 @@
     <!-- Bootstrap -->
 	<link href="${pageContext.request.contextPath}/resources/css/bootstrap.css" rel="stylesheet"></link>
     <link href="${pageContext.request.contextPath}/resources/css/site.css" rel="stylesheet"></link>
-	<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css" />
 	
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -31,7 +30,6 @@
     <![endif]-->
     <!--<link rel="stylesheet" href="styles/css/site2.css">-->
 </head>
-
 
 <body>
     <header class="main-header">
@@ -78,84 +76,118 @@
     </header>
 	<!-- nav bar -->
 	<jsp:include page="navbar.jsp" />
-	
-	<!-- Content Wrapper. Contains page content -->
+    
+    <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <section class="content-header">
-            <h1>Tournaments <small>display all Tournaments information</small></h1>
+            <h1>Home <small>match / player dashboard</small></h1>
             <ol class="breadcrumb">
                 <li>Home</li>
-                <li>Tournaments</li>
             </ol>
         </section>
         <section class="content">
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="box">
-                        <div class="box-header">
-                            <h3 class="box-title">Tournaments list</h3>
-                        </div>
-						<div class="box-header">
-                            <security:authorize access="hasAnyRole('ADMIN')">
-			
-								<!-- put new button: Add Player -->
-							
-								<input type="button" value="Add Tournament"
-									   onclick="window.location.href='showFormForAdd'; return false;"
-									   class="add-button"
-								/>
-			
-							</security:authorize>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="">
-                            <div class="table-responsive">
-                                <table id="example2" class="table table-striped table-hover" >
-                                    <thead>
-                                        <tr>
-											<th>S.No</th>
-											<th>Tournament Name</th>
-											<th>Start Date</th>
-											<th>End Date</th>
-											<th>Number Of Matches</th>
-											<%-- Only show "Action" column for managers or admin --%>
-											<security:authorize access="hasAnyRole('ADMIN')">
-												<th>Action</th>
-											</security:authorize>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-										<!-- loop over and print our players -->
-										<c:forEach var="tempTournament" items="${tournaments}">
-											<!-- construct an "update" link with customer id -->
-											<c:url var="updateLink" value="/tournament/showFormForUpdate">
-												<c:param name="tournamentId" value="${tempTournament.id}" />
-											</c:url>					
-											<tr>
-												<td> ${tempTournament.id} </td>
-												<td> ${tempTournament.tournamentName} </td>
-												<td> ${tempTournament.startDate} </td>
-												<td> ${tempTournament.endDate} </td>
-												<td> ${tempTournament.noOfMatches} </td>
-												<security:authorize access="hasAnyRole('ADMIN')">
-						
-												<td>
-													<security:authorize access="hasAnyRole('ADMIN')">
-														<!-- display the update link -->
-														<a href="${updateLink}" class="btn btn-success custom-width" >Edit</a>
-													</security:authorize>
-												</td>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-aqua">
+                            <img src="${pageContext.request.contextPath}/resources/img/no_user.png" style="width: 75px; height: 75px;" alt="User" class="" />
+                        </span>
 
-												</security:authorize>
-											</tr>
-										</c:forEach>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="info-box-content">
+                            <span class="info-box-caption">Batsman #1 </span>
+                            <span class="info-box-number">101*<small> highest score</small> </span>
+                            <span class="info-box-text">Name: Pavan Kumar</span>
                         </div>
-                        <!-- /.box-body -->
+                        <!-- /.info-box-content -->
                     </div>
-                    <!-- /.box -->
+                    <!-- /.info-box -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-aqua">
+                            <img src="${pageContext.request.contextPath}/resources/img/no_user.png" style="width: 75px; height: 75px;" alt="User" class="" /></i>
+                        </span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-caption">Bowler #1 </span>
+                            <span class="info-box-number">19.20<small>average</small></span>
+                            <span class="info-box-text">Name: Vinoth Kumar</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-aqua">
+                            <img src="${pageContext.request.contextPath}/resources/img/no_user.png" style="width: 75px; height: 75px;" alt="User" class="" /></i>
+                        </span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-caption">All Rounder #1 </span>
+                            <span class="info-box-number">90*<small> HS </small> / 20.8<small>AVG</small></span>
+                            <span class="info-box-text">Name: Vinoth Kumar</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-aqua">
+                            <img src="${pageContext.request.contextPath}/resources/img/no_user.png" style="width: 75px; height: 75px;" alt="User" class="" /></i>
+                        </span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-caption">CAPTIAN: </span>
+                            <span class="info-box-caption">SRINIVAS</span>
+                            <span class="info-box-text"><small>Right Hand Batsman</small></span>
+                            <span class="info-box-text"><small>Right Arm Medium Pace</small></span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="">
+                    <div class="col-md-6">                        
+                        <div class="box">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Match Performance</h3>
+                                <div class="box-tools pull-right">
+                                    <b>Year: 2017</b>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="chart">
+                                    <div id="matchPerformance" style="margin: 0 auto"></div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+
+                    </div>
+                    <div class="col-md-6">
+                        <!-- BAR CHART -->
+                        <div class="box">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Nets Performance</h3>
+                                <div class="box-tools pull-right">
+                                    <b>Year: 2017</b>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="chart">
+                                    <div id="matchPerformance1" style="margin: 0 auto"></div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
                 </div>
             </div>
         </section>
