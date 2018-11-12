@@ -221,7 +221,7 @@ public class AppConfig implements WebMvcConfigurer {
 	@Bean
 	public FreeMarkerConfigurationFactoryBean getFreeMarkerConfiguration() {
 		FreeMarkerConfigurationFactoryBean bean = new FreeMarkerConfigurationFactoryBean();
-		bean.setTemplateLoaderPath("classpath:/fmtemplates/");
+		bean.setTemplateLoaderPath("classpath:/templates/");
 		return bean;
 	}
         
