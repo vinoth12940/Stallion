@@ -12,7 +12,7 @@
 <div class="container main-section">
 	<div class="row">
 		<div class="col-md-12 text-center user-login-header">
-			<h1>Welcome to StallionsCC - Please Login</h1>
+			<h1>Login</h1>
 		</div>
 	</div>
 	<div class="row">
